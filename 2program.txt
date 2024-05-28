@@ -1,0 +1,20 @@
+users_info = []
+
+while True:
+    surname = input("Введите вашу фамилию: ")
+    birth_year = int(input("Введите год вашего рождения: "))
+    city_of_birth = iput("Введите место вашего рождения (город): ")
+
+    age = 2024 - birth_year
+
+    user_string = f"{surname} - {age} лет - {city_of_birth}"
+
+    users_info.append(user_string)
+
+    another_user = input("Хотите ввести информацию о еще одном человеке? (да/нет): ")
+    if another_user.lower() != "да":
+        break
+
+print("Информация о пользователях:")
+for user in users_info:
+    print(user)
