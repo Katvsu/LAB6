@@ -3,7 +3,7 @@ users_info = []
 while True:
     surname = input("Введите вашу фамилию: ")
     birth_year = int(input("Введите год вашего рождения: "))
-    city_of_birth = iput("Введите место вашего рождения (город): ")
+    city_of_birth = input("Введите место вашего рождения (город): ")
 
     age = 2024 - birth_year
 
